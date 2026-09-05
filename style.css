@@ -1,0 +1,207 @@
+/* Corpo do site */
+.card-link {
+    
+    display: block;
+    width: 100px;
+    text-decoration: none;
+    color: inherit;
+    
+}
+body{
+
+    
+
+    /* Remove as margens padrão do navegador */
+    margin: 0;
+
+    /* 
+    Cria uma camada preta transparente sobre a imagem.
+    Isso deixa o fundo mais escuro e destaca os cards.
+    */
+    background-image:
+
+    /* Camada escura */
+    linear-gradient(
+
+        /* Cor preta com 55% de transparência */
+        rgba(0,0,0,0.55),
+
+        /* Mantém a mesma cor do início ao fim */
+        rgba(0,0,0,0.55)
+
+    ),
+
+    /* Imagem de fundo */
+    url("https://images.pexels.com/photos/37505756/pexels-photo-37505756.jpeg");
+
+    /* Faz a imagem ocupar toda a tela */
+    background-size: cover;
+
+    /* Centraliza a imagem */
+    background-position: center;
+
+    /* Impede a repetição da imagem */
+    background-repeat: no-repeat;
+
+    /* Altura mínima igual à altura da tela */
+    min-height: 100vh;
+
+    /* Fonte utilizada no site */
+    font-family: Arial, sans-serif;
+}
+
+
+/* Barra superior */
+header{
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    background-color: #8ff7e7;
+
+    padding: 20px;
+}
+
+
+/* Título Ônibus */
+header h1{
+
+    margin: 0;
+}
+
+
+/* Área dos botões */
+nav{
+
+    display: flex;
+
+    gap: 10px;
+}
+
+
+/* Botões do menu */
+nav a{
+
+    background-color: white;
+
+    padding: 10px 15px;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    color: black;
+
+    font-weight: bold;
+}
+
+
+/* Efeito ao passar o mouse */
+nav a:hover{
+
+    background-color: #e8e8e8;
+}
+
+
+/* Área principal dos cards */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 100px;
+    margin-top: 200px;
+    position: relative;
+    flex-wrap: nowrap;
+}
+
+
+/* Faixa transparente da referência */
+.faixa{
+
+    position: absolute;
+
+    top: 150px;
+
+    width: 100%;
+
+    height: 850px; /* era 150 */
+
+   background: rgba(170, 255, 245, 0.45);
+
+    border-radius: 20px;
+
+    z-index: 1;
+}
+
+/* Cards */
+.card {
+    width: 220px;
+    height: 320px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
+    z-index: 2;
+}
+
+
+
+/* Cards */
+.card{
+
+    width: 220px;
+
+    height: 320px;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    position: relative;
+
+     box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
+}
+
+.card img{
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.card h2{
+
+    position: absolute;
+
+    bottom: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    padding: 10px 0;
+
+    text-align: center;
+
+    color: white;
+
+    background: rgba(0,0,0,0.5);
+}
+.card:hover{
+
+    transform: scale(1.05);
+
+    transition: 0.3s;
+}
+/* Imagem dentro do card */
+
+/* Título dentro dos cards */
+.card h2{
+
+    margin-top: 50;
+}

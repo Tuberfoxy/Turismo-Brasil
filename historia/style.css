@@ -1,0 +1,165 @@
+/* Corpo do site */
+body{
+
+    /* Remove margens padrão */
+    margin: 0;
+
+    /* Fundo escurecido */
+    background-image:
+    linear-gradient(
+        rgba(0,0,0,0.55),
+        rgba(0,0,0,0.55)
+    ),
+    url("https://images.pexels.com/photos/37505756/pexels-photo-37505756.jpeg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Barra superior */
+header{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #8ff7e7;
+
+    padding: 20px;
+
+    /* Permite adaptar o cabeçalho para telas menores */
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+
+/* Título */
+header h1{
+    margin: 0;
+}
+
+
+/* Área dos botões */
+nav{
+
+    display: flex;
+    gap: 10px;
+
+    /* Permite quebrar os botões quando faltar espaço */
+    flex-wrap: wrap;
+}
+
+
+/* Botões */
+nav a{
+
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+
+}
+
+
+/* Efeito hover */
+nav a:hover{
+
+    background-color: #e8e8e8;
+    transform: scale(1.03);
+
+}
+
+
+/* Área principal */
+main{
+
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    position: relative;
+
+}
+
+
+/* Faixa transparente */
+.faixa{
+
+    position: absolute;
+
+    width: 90%;
+    height: 750px;
+
+    background: rgba(170,255,245,0.45);
+
+    border-radius: 20px;
+
+    z-index: 1;
+
+}
+
+
+/* Caixa da história */
+.historia-box{
+
+    position: relative;
+
+    z-index: 3;
+
+    width: 80%;
+    max-width: 1000px;
+
+    padding: 10px;
+
+    color: white;
+
+    line-height: 1.8;
+
+    text-align: justify;
+
+}
+
+
+/* Título da história */
+.historia-box h2{
+
+    text-align: center;
+
+    font-size: 42px;
+
+    margin-bottom: 40px;
+
+}
+
+
+/* Parágrafos */
+.historia-box p{
+
+    font-size: 20px;
+
+    margin-bottom: 25px;
+
+}
+
+
+/* Ajuste para telas menores */
+@media (max-width: 800px){
+
+    header{
+        flex-direction: column;
+    }
+
+    nav{
+        justify-content: center;
+    }
+
+    .historia-box{
+        width: 85%;
+    }
+
+}

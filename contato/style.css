@@ -1,0 +1,155 @@
+/* Corpo do site */
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+    /* Fundo da página com uma camada escura */
+    background-image:
+    linear-gradient(
+        rgba(0,0,0,0.45),
+        rgba(0,0,0,0.45)
+    ),
+    url("https://images.pexels.com/photos/37505756/pexels-photo-37505756.jpeg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+
+/* Cabeçalho */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8ff7e7;
+    padding: 20px;
+
+    /* Permite que o menu se ajuste se faltar espaço */
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+
+/* Título da empresa */
+header h1{
+    margin: 0;
+}
+
+
+/* Área dos botões */
+nav{
+    display: flex;
+    gap: 10px;
+
+    /* Permite que os links passem para outra linha em telas pequenas */
+    flex-wrap: wrap;
+}
+
+
+/* Botões do menu */
+nav a{
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+
+/* Efeito quando passa o mouse */
+nav a:hover{
+    background-color: #e8e8e8;
+    transform: scale(1.03);
+}
+
+
+/* Área principal */
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    position: relative;
+}
+
+
+/* Faixa transparente atrás dos conteúdos */
+.faixa{
+    position: absolute;
+    width: 85%;
+    height: 420px;
+    background: rgba(170,255,245,0.35);
+    border-radius: 25px;
+    z-index: 1;
+}
+
+
+/* Linha de contatos */
+.contatos{
+    display: flex;
+    gap: 50px;
+    z-index: 2;
+    margin-top: 30px;
+}
+
+
+/* Cada informação de contato */
+.info{
+    background: white;
+    padding: 12px 25px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+
+/* Redes sociais */
+.redes{
+    display: flex;
+    gap: 70px;
+    margin-top: 80px;
+    z-index: 2;
+}
+
+
+/* Cards das redes sociais */
+.rede{
+    width: 180px;
+    height: 180px;
+    background: rgba(255,255,255,0.7);
+    border-radius: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* Efeito dos cards ao passar o mouse */
+.rede:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+
+/* Ajuste para telas menores */
+@media (max-width: 800px){
+
+    header{
+        flex-direction: column;
+    }
+
+    nav{
+        justify-content: center;
+    }
+
+    .contatos,
+    .redes{
+        flex-direction: column;
+        align-items: center;
+    }
+
+}

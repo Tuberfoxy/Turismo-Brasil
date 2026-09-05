@@ -1,0 +1,331 @@
+/* =========================================
+   CORPO DO SITE
+   ========================================= */
+
+   body{
+
+    
+
+    /* Remove margem padrão */
+    margin: 0;
+
+    /* Fonte */
+    font-family: Arial, sans-serif;
+
+    /* Fundo com imagem e camada escura */
+    background-image:
+
+    linear-gradient(
+        rgba(0,0,0,0.55),
+        rgba(0,0,0,0.55)
+    ),
+
+    url("https://images.pexels.com/photos/37505756/pexels-photo-37505756.jpeg");
+
+    /* Faz a imagem ocupar a tela */
+    background-size: cover;
+
+    /* Centraliza a imagem */
+    background-position: center;
+
+    /* Não repete */
+    background-repeat: no-repeat;
+
+    /* Altura mínima */
+    min-height: 100vh;
+
+}
+
+
+/* =========================================
+   CABEÇALHO
+   ========================================= */
+
+header{
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    background-color: #8ff7e7;
+
+    padding: 20px;
+
+    /* Permite adaptação */
+    flex-wrap: wrap;
+
+    gap: 15px;
+
+}
+
+
+/* Nome da empresa */
+
+header h1{
+
+    margin: 0;
+
+}
+
+
+/* Menu */
+
+nav{
+
+    display: flex;
+
+    gap: 10px;
+
+    flex-wrap: wrap;
+
+}
+
+
+/* Botões */
+
+nav a{
+
+    background-color: white;
+
+    padding: 10px 15px;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    color: black;
+
+    font-weight: bold;
+
+}
+
+
+/* Hover dos botões */
+
+nav a:hover{
+
+    background-color: #e8e8e8;
+
+}
+
+
+/* =========================================
+   ÁREA PRINCIPAL
+   ========================================= */
+
+main{
+
+    position: relative;
+
+    padding: 60px 0 100px;
+
+}
+
+
+/* Faixa transparente */
+
+.faixa{
+
+    position: absolute;
+
+    top: 40px;
+
+    left: 5%;
+
+    width: 90%;
+
+    height: 2400px;
+
+    background: rgba(170,255,245,0.35);
+
+    border-radius: 25px;
+
+    z-index: 1;
+
+}
+
+
+/* =========================================
+   TÍTULO
+   ========================================= */
+
+.titulo{
+
+    position: relative;
+
+    z-index: 2;
+
+    text-align: center;
+
+    color: white;
+
+    font-size: 38px;
+
+    margin-bottom: 40px;
+
+}
+
+
+/* =========================================
+   DESTINOS
+   ========================================= */
+
+.destinos{
+
+    position: relative;
+
+    z-index: 2;
+
+    width: 85%;
+
+    max-width: 1000px;
+
+    margin: auto;
+
+}
+
+
+/* Cada destino */
+
+.destino{
+
+    display: flex;
+
+    background-color: white;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    margin-bottom: 30px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+
+}
+
+
+/* Imagem */
+
+.destino img{
+
+    width: 40%;
+
+    min-height: 250px;
+
+    object-fit: cover;
+
+}
+
+
+/* Informações */
+
+.informacoes{
+
+    padding: 25px;
+
+    flex: 1;
+
+}
+
+
+/* Nome do destino */
+
+.informacoes h3{
+
+    margin-top: 0;
+
+    font-size: 27px;
+
+}
+
+
+/* Texto */
+
+.informacoes p{
+
+    line-height: 1.5;
+
+}
+
+
+/* =========================================
+   BOTÃO DE RESERVA
+   ========================================= */
+
+.botao{
+
+    display: inline-block;
+
+    background-color: #8ff7e7;
+
+    color: black;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    padding: 12px 20px;
+
+    border-radius: 10px;
+
+    margin-top: 10px;
+
+}
+
+
+/* Efeito do botão */
+
+.botao:hover{
+
+    background-color: #65dfce;
+
+    transform: scale(1.03);
+
+}
+
+
+/* =========================================
+   CELULAR
+   ========================================= */
+
+@media(max-width: 700px){
+
+    header{
+
+        flex-direction: column;
+
+    }
+
+
+    nav{
+
+        justify-content: center;
+
+    }
+
+
+    .destino{
+
+        flex-direction: column;
+
+    }
+
+
+    .destino img{
+
+        width: 100%;
+
+        height: 220px;
+
+    }
+
+
+    .faixa{
+
+        height: 3300px;
+
+    }
+
+}

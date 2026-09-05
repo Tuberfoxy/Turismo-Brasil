@@ -1,0 +1,84 @@
+/* Corpo do site */
+body{
+
+    /* Imagem de fundo */
+    background-image: url("https://img.magnific.com/fotos-gratis/paraiso-de-praia-tropical-com-palmeiras-e-agua-azul-turquesa_23-2151975534.jpg?semt=ais_hybrid&w=740&q=80");
+
+    /* Faz ocupar a tela inteira */
+    background-size: cover;
+
+    /* Centraliza */
+    background-position: center;
+
+    /* Fonte */
+    font-family: Arial;
+
+    /* Altura total */
+    height: 150vh;
+}
+
+/* Container */
+.container{
+
+    /* Coloca lado a lado */
+    display: flex;
+
+    /* Espaço entre os cards */
+    gap: 80px;
+
+    /* Centraliza horizontal */
+    justify-content: center;
+
+    /* Centraliza vertical */
+    align-items: center;
+
+    height: 100vh;
+}
+
+/* Cards */
+.card{
+
+    background-color: rgba(255,255,255,0.50);
+
+    width: 300px;
+
+    height: 500px;
+
+    padding: 20px;
+
+    border-radius: 20px;
+
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.3);
+}
+
+/* Título */
+h1{
+
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+/* Textos */
+p{
+
+    background-color: rgba(255,255,255,0.50);
+
+    padding: 15px;
+
+    margin-bottom: 20px;
+
+    border-radius: 10px;
+}
+.logo{
+
+    width: 220px;
+
+    height: auto;
+}
+.card:hover{
+
+    transform: scale(1.03);
+
+    transition: 0.3s;
+}
