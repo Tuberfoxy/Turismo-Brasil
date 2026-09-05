@@ -1,0 +1,383 @@
+/* =========================================
+   CORPO DO SITE
+   ========================================= */
+
+  /* Corpo do site */
+body{
+
+    margin: 0;
+
+    /* Camada escura por cima da imagem */
+    background-image:
+
+    linear-gradient(
+        rgba(0,0,0,0.55),
+        rgba(0,0,0,0.55)
+    ),
+
+    /* Imagem de fundo */
+    url("https://images.pexels.com/photos/37505756/pexels-photo-37505756.jpeg");
+
+    /* Faz a imagem preencher a tela */
+    background-size: cover;
+
+    /* Centraliza o fundo */
+    background-position: center;
+
+    /* Não repete a imagem */
+    background-repeat: no-repeat;
+
+    /* Mantém o fundo cobrindo a página */
+    min-height: 100vh;
+
+    font-family: Arial, sans-serif;
+}
+
+/* =========================================
+   CABEÇALHO
+   ========================================= */
+
+header{
+
+    /* Coloca título e menu lado a lado */
+    display: flex;
+
+    /* Título fica à esquerda e menu à direita */
+    justify-content: space-between;
+
+    /* Centraliza verticalmente */
+    align-items: center;
+
+    /* Cor utilizada nas outras páginas */
+    background-color: #8ff7e7;
+
+    /* Espaçamento interno */
+    padding: 20px;
+
+    /* Permite adaptação em telas menores */
+    flex-wrap: wrap;
+
+    /* Espaço quando o menu quebra de linha */
+    gap: 15px;
+
+}
+
+
+/* Título da empresa */
+
+header h1{
+
+    /* Remove margem padrão */
+    margin: 0;
+
+}
+
+
+/* =========================================
+   MENU
+   ========================================= */
+
+nav{
+
+    /* Coloca os links lado a lado */
+    display: flex;
+
+    /* Espaço entre os botões */
+    gap: 10px;
+
+    /* Permite quebrar linha em telas pequenas */
+    flex-wrap: wrap;
+
+}
+
+
+/* Botões do menu */
+
+nav a{
+
+    /* Fundo branco */
+    background-color: white;
+
+    /* Espaçamento interno */
+    padding: 10px 15px;
+
+    /* Cantos arredondados */
+    border-radius: 8px;
+
+    /* Remove sublinhado */
+    text-decoration: none;
+
+    /* Texto preto */
+    color: black;
+
+    /* Texto em negrito */
+    font-weight: bold;
+
+}
+
+
+/* Efeito ao passar o mouse */
+
+nav a:hover{
+
+    /* Muda levemente o fundo */
+    background-color: #e8e8e8;
+
+}
+
+
+/* =========================================
+   ÁREA PRINCIPAL
+   ========================================= */
+
+main{
+
+    /* Permite posicionar a faixa atrás dos cards */
+    position: relative;
+
+    /* Centraliza o conteúdo */
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    /* Espaço abaixo do cabeçalho */
+    margin-top: 70px;
+
+    /* Espaço inferior */
+    padding-bottom: 80px;
+
+}
+
+
+/* =========================================
+   FAIXA TRANSPARENTE
+   ========================================= */
+
+.faixa{
+
+    /* Coloca a faixa atrás dos cards */
+    position: absolute;
+
+    /* Distância do topo */
+    top: 50px;
+
+    /* Largura da faixa */
+    width: 98%;
+
+    /* Altura da faixa */
+    height: 900px;
+
+    /* Cor transparente */
+    background: rgba(170,255,245,0.45);
+
+    /* Cantos arredondados */
+    border-radius: 30px;
+
+    /* Fica atrás dos outros elementos */
+    z-index: 1;
+
+}
+
+
+/* =========================================
+   TÍTULO
+   ========================================= */
+
+.titulo{
+
+    /* Fica na frente da faixa */
+    position: relative;
+
+    z-index: 2;
+
+    /* Cor do título */
+    color: white;
+
+    /* Tamanho do título */
+    font-size: 38px;
+
+    /* Espaço abaixo */
+    margin-bottom: 40px;
+
+}
+
+
+/* =========================================
+   ÁREA DOS DESTINOS
+   ========================================= */
+
+.destinos{
+
+    /* Fica na frente da faixa */
+    position: relative;
+
+    z-index: 2;
+
+    /* Coloca os cards lado a lado */
+    display: flex;
+
+    /* Espaço entre os cards */
+    gap: 60px;
+
+    /* Centraliza os cards */
+    justify-content: center;
+
+    /* Permite quebrar linha em telas menores */
+    flex-wrap: wrap;
+
+}
+
+
+/* =========================================
+   CARDS
+   ========================================= */
+
+.card{
+
+    /* Largura do card */
+    width: 260px;
+
+    /* Altura do card */
+    height: 380px;
+
+    /* Arredonda os cantos */
+    border-radius: 20px;
+
+    /* Esconde o que ultrapassar os cantos */
+    overflow: hidden;
+
+    /* Faz a imagem ocupar o card */
+    position: relative;
+
+    /* Remove o sublinhado do link */
+    text-decoration: none;
+
+    /* Sombra */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+
+    /* Animação suave */
+    transition: 0.3s;
+
+}
+
+
+/* =========================================
+   IMAGENS DOS CARDS
+   ========================================= */
+
+.card img{
+
+    /* Ocupa toda a largura */
+    width: 100%;
+
+    /* Ocupa toda a altura */
+    height: 100%;
+
+    /* Não deixa a imagem deformar */
+    object-fit: cover;
+
+}
+
+
+/* =========================================
+   NOME E DESCRIÇÃO
+   ========================================= */
+
+.nome{
+
+    /* Coloca o texto na parte inferior */
+    position: absolute;
+
+    bottom: 0;
+
+    left: 0;
+
+    /* Ocupa toda a largura */
+    width: 100%;
+
+    /* Fundo escuro transparente */
+    background: rgba(0,0,0,0.55);
+
+    /* Texto branco */
+    color: white;
+
+    /* Espaçamento interno */
+    padding: 15px 0;
+
+    /* Centraliza o texto */
+    text-align: center;
+
+}
+
+
+/* Título dentro do card */
+
+.nome h3{
+
+    /* Remove margem padrão */
+    margin: 0 10px 8px;
+
+    /* Tamanho do título */
+    font-size: 22px;
+
+}
+
+
+/* Descrição */
+
+.nome p{
+
+    /* Remove margem padrão */
+    margin: 0 15px;
+
+    /* Tamanho do texto */
+    font-size: 14px;
+
+    /* Espaçamento entre linhas */
+    line-height: 1.4;
+
+}
+
+
+/* =========================================
+   EFEITO AO PASSAR O MOUSE
+   ========================================= */
+
+.card:hover{
+
+    /* Aumenta o card levemente */
+    transform: scale(1.05);
+
+}
+
+
+/* =========================================
+   TELAS MENORES
+   ========================================= */
+
+@media (max-width: 800px){
+
+    /* Organiza o cabeçalho verticalmente */
+    header{
+
+        flex-direction: column;
+
+    }
+
+    /* Centraliza o menu */
+    nav{
+
+        justify-content: center;
+
+    }
+
+    /* Diminui o tamanho da faixa */
+    .faixa{
+
+        height: 1100px;
+
+    }
+
+}
